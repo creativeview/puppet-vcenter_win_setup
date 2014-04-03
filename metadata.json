@@ -1,0 +1,35 @@
+{
+  "author": "David Balharrie",
+  "checksums": {
+    "manifests\\init.pp": "34ad57545ded8e6d5b950bf483efff8c",
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "manifests\\inventory_service.pp": "bc2cb520cf8a828b41a9da5e2011740a",
+    "manifests\\client.pp": "063b686b63de04b03328af044a87a20e",
+    "manifests\\sso.pp": "255eab407e44468ffaf6c13b6103d7fe",
+    "manifests\\msvc2005.pp": "3d5aacef43b53012f564ad1942519913",
+    "spec\\spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "Modulefile": "90e6f15bf3fd37ba7fd22bdc1b36753e",
+    "manifests\\webclient.pp": "f0d074ebe3d29f5b1468032d99330f04",
+    "spec\\spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "tests\\init.pp": "40be22f2db0b3c6e07d0f858660b1183",
+    "manifests\\vcenter.pp": "cdbf71ff02e6c574a1c88f57e687480b",
+    "templates\\setup.bat.erb": "bc56e0ec2c39e1ae7748414579eee85a",
+    "manifests\\set_logon_as_service.pp": "cd9de3b073abb941b841e914be03e20f",
+    "templates\\SetLogonAsAServiceRight.vbs.erb": "606e88ebf5192815607025ce4d5deb7f",
+    "README.md": "d712af406062a71a22fa82249a885121"
+  },
+  "dependencies": [
+    {
+      "name": "puppetlabs/dism",
+      "version_requirement": "\u003e\u003d 0.1.0"
+    }
+  ],
+  "description": "",
+  "license": "",
+  "name": "creativeview-vcenter_win_setup",
+  "project_page": "https://github.com/creativeview/puppet-vcenter_win_setup",
+  "source": "",
+  "summary": "VMware vCenter 5.5 Windows Installation module for Puppet",
+  "types": [],
+  "version": "0.1.0"
+}

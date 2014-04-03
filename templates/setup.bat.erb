@@ -1,0 +1,16 @@
+@ECHO OFF
+
+SET Installed=false
+
+FOR /F "tokens=*" %%A IN ('C:\Windows\System32\wbem\wmic.exe product Where "name='<%= @product_name %>'" Get Version') DO (
+        echo.%%A|findstr /C:"Version" >nul 2>&1 && SET Installed=true
+        REM Echo.%%A
+)
+
+
+if "%Installed%" == "false" (
+    Echo.<%= @product_name %> is not installed. Running Setup.
+    <%= @setup_cmd %>
+) ELSE (
+Echo.<%= @product_name %> is installed on this system.
+)
