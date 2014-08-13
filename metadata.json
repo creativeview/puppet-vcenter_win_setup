@@ -24,12 +24,12 @@
       "version_requirement": "\u003e\u003d 0.1.0"
     }
   ],
-  "description": "",
-  "license": "",
+  "description": "This module deploys VMware vCenter 5.5 on Windows and it's components using a MSSQL database. The components can be separated out on to different servers if required.",
+  "license": "Licensed under (Apache 2.0)",
   "name": "creativeview-vcenter_win_setup",
   "project_page": "https://github.com/creativeview/puppet-vcenter_win_setup",
-  "source": "",
+  "source": "https://github.com/creativeview/puppet-vcenter_win_setup",
   "summary": "VMware vCenter 5.5 Windows Installation module for Puppet",
   "types": [],
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

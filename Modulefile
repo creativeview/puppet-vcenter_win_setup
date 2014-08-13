@@ -1,5 +1,5 @@
 name    'creativeview-vcenter_win_setup'
-version '0.1.0'
+version '0.1.1'
 source ''
 author 'David Balharrie'
 license ''
