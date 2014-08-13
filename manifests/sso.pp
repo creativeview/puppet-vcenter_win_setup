@@ -16,7 +16,7 @@ class vcenter_win_setup::sso (
 {
 
  $product_name = "vCenter Single Sign-On"
- $setup_cmd = "start /wait msiexec.exe /qr /norestart /i  /L*v \"%TEMP%\vim-sso-msi.log\" \"${media}Single Sign-On\VMware-SSO-Server.msi\" SSO_HTTPS_PORT=${sso_httpport} DEPLOYMODE=${sso_deploymode} ADMINPASSWORD=${sso_pwd} SSO_SITE=${sso_site} "
+ $setup_cmd = "start /wait msiexec.exe /qr /norestart /i \"${media}Single Sign-On\VMware-SSO-Server.msi\" SSO_HTTPS_PORT=${sso_httpport} DEPLOYMODE=${sso_deploymode} ADMINPASSWORD=${sso_pwd} SSO_SITE=${sso_site} "
 
   file { 'C:\\vCenter_Setup_Scripts\sso_setup.bat':
     content => template('vcenter_win_setup/setup.bat.erb'),

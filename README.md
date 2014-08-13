@@ -1,8 +1,10 @@
 # VMware vCenter 5.5 Windows Installation module for Puppet #
 
+### Module Description
+
 This module deploys VMware vCenter 5.5 on Windows and it's components using a MSSQL database. The components can be separated out on to different servers if required.  
 
-### Components it installs
+#### Components it installs
 * VMware vCenter Single Sign-On
 * VMware vCenter Inventory Service
 * VMware vCenter 
@@ -26,6 +28,7 @@ This module depends on DISM module to enable .net 3.5 on Windows Server:
 It's recommended to use the [mssql_system_dsn] (https://forge.puppetlabs.com/creativeview/mssql_system_dsn) module to setup the ODBC System DSN.
 
 ## Usage
+The puppet run should be started using "Run Puppet Agent". Running the installation via the Puppet service will cause errors during the installation. 
 
 ##### Example:
 
@@ -151,3 +154,6 @@ class{'vcenter_win_setup::webclient':
 * sso_admin
 * webclient_HTTP_PORT
 * webclient_HTTPS_PORT
+
+#### Development 
+* Further contributions and feedback is welcomed - please submit a pull request or issue on GitHub.
