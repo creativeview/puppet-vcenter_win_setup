@@ -28,7 +28,7 @@ This module depends on DISM module to enable .net 3.5 on Windows Server:
 It's recommended to use the [mssql_system_dsn] (https://forge.puppetlabs.com/creativeview/mssql_system_dsn) module to setup the ODBC System DSN.
 
 ## Usage
-**Important:** The puppet run should be started using "Run Puppet Agent". Running the installation via the Puppet service will cause errors during the installation. 
+**Important:** The puppet run should be started using "Run Puppet Agent" with administrator rights. Running the installation via the Puppet service will cause errors during the installation. 
 
 ##### Example:
 
